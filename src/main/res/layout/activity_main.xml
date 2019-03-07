@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        layout="@layout/progress"
+        android:id="@+id/container_progress"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/error"
+        android:id="@+id/container_error"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/empty"
+        android:id="@+id/container_empty"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/content"
+        android:id="@+id/container_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_for_changing_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Change state"/>
+
+</FrameLayout>

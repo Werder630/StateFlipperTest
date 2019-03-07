@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.werder.stateflippertest.StateFlipViewGroup
+        android:id="@+id/state_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/fade_in"
+        android:outAnimation="@anim/fade_out">
+
+        <include
+            android:id="@id/progress_container"
+            layout="@layout/progress" />
+
+        <include
+            android:id="@id/error_container"
+            layout="@layout/error" />
+
+        <include
+            android:id="@id/empty_container"
+            layout="@layout/empty" />
+
+        <include
+            android:id="@id/content_container"
+            layout="@layout/content" />
+
+    </com.example.werder.stateflippertest.StateFlipViewGroup>
+
+    <Button
+        android:id="@+id/button_for_changing_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Change state" />
+
+</FrameLayout>

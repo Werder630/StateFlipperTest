@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@android:drawable/ic_delete"
+        android:drawablePadding="16dp"
+        android:drawableTint="#FF0000"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="Server are temporarily unavailable"/>
+
+</FrameLayout>
