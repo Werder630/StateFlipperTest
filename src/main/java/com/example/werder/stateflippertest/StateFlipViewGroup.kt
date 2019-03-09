@@ -19,17 +19,13 @@ class StateFlipViewGroup
     override fun onViewAdded(child: View) {
         super.onViewAdded(child)
 
-        if (child.id > 0) {
-            invalidateIds()
-        }
+        invalidateIds()
     }
 
     override fun onViewRemoved(child: View) {
         super.onViewRemoved(child)
 
-        if (child.id > 0) {
-            invalidateIds()
-        }
+        invalidateIds()
     }
 
     fun showContent() {
